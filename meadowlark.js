@@ -1,5 +1,5 @@
 var express = require('express');
-
+var fortune = require('./lib/fortune');
 var app = express();
 //static中间件加在所有路由之前
 app.use(express.static(__dirname + '/public'));
@@ -19,16 +19,10 @@ function indexPage(req,res){
 
 app.get('/',indexPage);
 
-var fortunes = [
-    "huaQ",
-    "rua",
-    "我燃烧你的梦",
-    "他要吃人啦",
-]
+
 
 app.get('/about',function(req,res){
-    var randomFortune = fortunes[Math.floor(Math.random()* fortunes.length)];
-    res.render('about',{fortune : randomFortune});
+    res.render('about',{fortune : fortune.getFortune()});
 });
 
 //定制404页面
