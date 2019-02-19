@@ -1,0 +1,26 @@
+{
+  "name": "meadowlark",
+  "version": "1.0.0",
+  "description": "this is a project to learn node and express",
+  "main": "meadowlark.js",
+  "scripts": {
+    "test": "huaQ"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sikinn/meadowlark.git"
+  },
+  "keywords": [
+    "huaQ"
+  ],
+  "author": "sikin",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sikinn/meadowlark/issues"
+  },
+  "homepage": "https://github.com/sikinn/meadowlark#readme",
+  "dependencies": {
+    "express": "^4.16.4",
+    "express3-handlebars": "^0.5.2"
+  }
+}
